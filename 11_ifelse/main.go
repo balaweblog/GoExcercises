@@ -24,7 +24,15 @@ func main() {
 
 	//beauty of go initializatin
 	//if we are going to use the field only in the if field then you can declare it.
+	//do some calculation if result<10 do something else do somethong
 	if ab := 10; true {
 		fmt.Println(ab)
+	}
+
+	//if else or and and
+	//ab:=20
+	cc := 22
+	if ab := 20; ab == 20 && cc == 22 || false {
+		fmt.Println("okd..")
 	}
 }
