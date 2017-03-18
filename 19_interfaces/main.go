@@ -6,7 +6,7 @@ import (
 
 func main() {
 
-	// polymorphism
+	// polymorphism 
 	//interface
 	circle := Circle{1}
 	c := area(circle)

@@ -16,6 +16,32 @@ func main() {
 	var calc int
 	calc = int(age)
 	fmt.Println(calc)
+    
+    //user defined types extension
+    ppl := People{"balamurugan", "alagumalai", "dhiva"}
+	fmt.Println(ppl.Length())
+    ppl.OrderAsc()
+    fmt.Println(ppl)
+    
+    
 }
 
 type Foo int
+
+
+type People []string
+
+func (p People) Length() int {
+	return len(p)
+}
+func (p People) OrderAsc() {
+	var c People
+	for _, i := range p {
+		for _, j := range p {
+			if (i != j) && i > j {
+				c = append(c, i)
+			}
+		}
+	}
+	p = c
+}
