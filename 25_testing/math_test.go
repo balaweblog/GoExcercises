@@ -2,8 +2,8 @@ package math
 
 import (
 	"fmt"
+	"testing"
 	"testing/quick"
-    "testing"
 )
 
 /*
@@ -34,8 +34,8 @@ func ExampleAdd() {
 */
 // blackbox testing testing/quick package needed
 func TestAddBlackbox(t *testing.T) {
-    fmt.Println("entered")
-    err := quick.Check(a, nil)
+	fmt.Println("entered")
+	err := quick.Check(a, nil)
 	if err != nil {
 		t.Fatal(err)
 	}
